@@ -1,148 +1,148 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ти не встиг!</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #ff4444, #ffbb33);
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-        }
-        .container {
-            padding: 20px;
-            opacity: 0;
-            transition: opacity 1s ease-in;
-        }
-        .container.show {
-            opacity: 1;
-        }
-        h1 {
-            font-size: 5em;
-            text-transform: uppercase;
-            text-shadow: 3px 3px 10px #000;
-            animation: shake 0.3s infinite;
-            margin: 0;
-        }
-        p {
-            font-size: 2em;
-            margin: 15px 0;
-            text-shadow: 1px 1px 5px #000;
-        }
-        .meme {
-            font-size: 1.8em;
-            color: #ffd700;
-            animation: pulse 2s infinite;
-        }
-        .countdown {
-            font-size: 6em;
-            font-weight: bold;
-            color: #00ffcc;
-            text-shadow: 2px 2px 8px #000;
-            display: none;
-        }
-        .countdown.show {
-            display: block;
-        }
-        img {
-            max-width: 250px;
-            margin-top: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            animation: bounce 2s infinite;
-        }
-        .troll {
-            position: absolute;
-            bottom: 20px;
-            font-size: 1.3em;
-            color: #00ffcc;
-            text-shadow: 1px 1px 5px #000;
-        }
-        @keyframes shake {
-            0% { transform: translate(0, 0); }
-            25% { transform: translate(-5px, 5px); }
-            50% { transform: translate(5px, -5px); }
-            75% { transform: translate(-5px, -5px); }
-            100% { transform: translate(0, 0); }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ти не встиг!</title>
+ <style>
+ body {
+ margin: 0;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(135deg, #ff4444, #ffbb33);
+ font-family: 'Comic Sans MS', 'Arial', sans-serif;
+ color: #fff;
+ text-align: center;
+ overflow: hidden;
+ }
+ .container {
+ padding: 20px;
+ opacity: 0;
+ transition: opacity 1s ease-in;
+ }
+ .container.show {
+ opacity: 1;
+ }
+ h1 {
+ font-size: 5em;
+ text-transform: uppercase;
+ text-shadow: 3px 3px 10px #000;
+ animation: shake 0.3s infinite;
+ margin: 0;
+ }
+ p {
+ font-size: 2em;
+ margin: 15px 0;
+ text-shadow: 1px 1px 5px #000;
+ }
+ .meme {
+ font-size: 1.8em;
+ color: #ffd700;
+ animation: pulse 2s infinite;
+ }
+ .countdown {
+ font-size: 6em;
+ font-weight: bold;
+ color: #00ffcc;
+ text-shadow: 2px 2px 8px #000;
+ display: none;
+ }
+ .countdown.show {
+ display: block;
+ }
+ img {
+ max-width: 250px;
+ margin-top: 20px;
+ border-radius: 15px;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ animation: bounce 2s infinite;
+ }
+ .troll {
+ position: absolute;
+ bottom: 20px;
+ font-size: 1.3em;
+ color: #00ffcc;
+ text-shadow: 1px 1px 5px #000;
+ }
+ @keyframes shake {
+ 0% { transform: translate(0, 0); }
+ 25% { transform: translate(-5px, 5px); }
+ 50% { transform: translate(5px, -5px); }
+ 75% { transform: translate(-5px, -5px); }
+ 100% { transform: translate(0, 0); }
+ }
+ @keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.1); }
+ 100% { transform: scale(1); }
+ }
+ @keyframes bounce {
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(-20px); }
+ }
+ </style>
 </head>
 <body>
-    <div class="container" id="mainContent">
-        <h1>Ти не встиг!</h1>
-        <p>10 хвилин пройшло, а ти прогавив! 😜</p>
-        <p class="meme">Твій друг: *плаче в кутку* 😭</p>
-        <img src="https://i.imgur.com/3Gq5z.gif" alt="Троллфейс">
-        <p class="meme">Слабо встигнути наступного разу? 😎</p>
-        <p class="troll">Трололо, лови конфеті! 😈</p>
-    </div>
-    <div class="countdown" id="countdown">3</div>
+ <div class="container" id="mainContent">
+ <h1>Ти не встиг!</h1>
+ <p>10 хвилин пройшло, а ти прогавив! 😜</p>
+ <p class="meme">Твій друг: *плаче в кутку* 😭</p>
+ <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2QyYjI0NzM5MTYxYjQ0MjU3YTdiYzU5YzU4ZmUyODU4YzM3YzQ1NSZjdD1n/3o7TKTDn976IPCw6Qy/giphy.gif" alt="Танцюючий банан">
+ <p class="meme">Слабо встигнути наступного разу? 😎</p>
+ <p class="troll">Трололо, лови конфеті! 😈</p>
+ </div>
+ <div class ="countdown" id="countdown">3</div>
 
-    <!-- Додаємо бібліотеку для конфеті -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script>
-        // Зворотний відлік
-        const countdown = document.getElementById('countdown');
-        const mainContent = document.getElementById('mainContent');
-        let count = 3;
+ <!-- Додаємо бібліотеку для конфеті -->
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ <script>
+ // Зворотний відлік
+ const countdown = document.getElementById('countdown');
+ const mainContent = document.getElementById('mainContent');
+ let count = 3;
 
-        countdown.classList.add('show');
-        mainContent.style.display = 'none';
+ countdown.classList.add('show');
+ mainContent.style.display = 'none';
 
-        const countdownInterval = setInterval(() => {
-            count--;
-            if (count > 0) {
-                countdown.textContent = count;
-            } else if (count === 0) {
-                countdown.textContent = 'БАМ!';
-            } else {
-                countdown.style.display = 'none';
-                mainContent.style.display = 'block';
-                mainContent.classList.add('show');
-                clearInterval(countdownInterval);
+ const countdownInterval = setInterval(() => {
+ count--;
+ if (count > 0) {
+ countdown.textContent = count;
+ } else if (count === 0) {
+ countdown.textContent = 'БАМ!';
+ } else {
+ countdown.style.display = 'none';
+ mainContent.style.display = 'block';
+ mainContent.classList.add('show');
+ clearInterval(countdownInterval);
 
-                // Запускаємо конфеті
-                confetti({
-                    particleCount: 100,
-                    spread: 70,
-                    origin: { y: 0.6 },
-                    colors: ['#ff4444', '#ffd700', '#00ffcc']
-                });
+ // Запускаємо конфеті
+ confetti({
+ particleCount: 100,
+ spread: 70,
+ origin: { y: 0.6 },
+ colors: ['#ff4444', '#ffd700', '#00ffcc']
+ });
 
-                // Спливаюче повідомлення
-                setTimeout(() => {
-                    alert('Ха-ха, ти думав, що встигнеш? 😏 Лови троллінг!');
-                }, 1000);
+ // Спливаюче повідомлення
+ setTimeout(() => {
+ alert('Ха-ха, ти думав, що встигнеш? 😏 Лови троллінг!');
+ }, 1000);
 
-                // Другий прикол: через 3 секунди ще одне повідомлення
-                setTimeout(() => {
-                    alert('Твій таймер? Пфф, він тебе не врятує! 😈');
-                }, 3000);
-            }
-        }, 1000);
+ // Другий прикол: через 3 секунди ще одне повідомлення
+ setTimeout(() => {
+ alert('Твій таймер? Пфф, він тебе не врятує! 😈');
+ }, 3000);
+ }
+ }, 1000);
 
-        // Додаємо звук троллінгу (наприклад, звук "Trololo")
-        const audio = new Audio('https://www.myinstants.com/media/sounds/trollolo.mp3');
-        setTimeout(() => {
-            audio.play().catch(() => console.log('Звук не відтворився, можливо, браузер блокує автоплей'));
-        }, 4000);
-    </script>
+ // Додаємо звук троллінгу
+ const audio = new Audio('https://www.myinstants.com/media/sounds/trollolo.mp3');
+ setTimeout(() => {
+ audio.play().catch(() => console.log('Звук не відтворився, можливо, браузер блокує автоплей'));
+ }, 4000);
+ </script>
 </body>
 </html>
