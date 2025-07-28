@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ти не встиг!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff4444;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px #000;
+            animation: shake 0.5s infinite;
+        }
+        p {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .meme {
+            font-size: 1.5em;
+            color: #ffd700;
+            text-shadow: 1px 1px 3px #000;
+        }
+        @keyframes shake {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-5px, 5px); }
+            50% { transform: translate(5px, -5px); }
+            75% { transform: translate(-5px, -5px); }
+            100% { transform: translate(0, 0); }
+        }
+        .troll {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ти не встиг!</h1>
+        <p>10 хвилин пройшло, а ти прогавив! 😜</p>
+        <p class="meme">Твій друг: *плаче в кутку*</p>
+        <img src="https://i.imgur.com/3Gq5z.gif" alt="Троллфейс">
+        <p class="troll">Трололо, спробуй ще раз! 😈</p>
+    </div>
+    <script>
+        // Додатковий прикол: спливаюче повідомлення
+        setTimeout(() => {
+            alert("Ха-ха, ти думав, що встигнеш? 😏");
+        }, 1000);
+    </script>
+</body>
+</html>
